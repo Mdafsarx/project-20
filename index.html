@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<title>A Universal Hub</title>
+</head>
+<body class="container mx-auto mb-10">
+
+<header>
+    <div class="space-y-5 flex flex-col justify-center items-center py-12">
+        <h1 class="text-3xl font-bold">AI Universe Hub</h1>
+        <button class="btn font-bold bg-red-600 text-white" onclick="sort()">Sort By Date</button>
+    </div>
+</header>
+
+
+<main>
+
+<!-- loading spin -->
+
+<div class="flex justify-center mb-6" id="spiner">
+    <span class="loading loading-bars loading-lg size-20"></span>
+</div>
+
+<!-- card -->
+
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-10 " id="cardContainer">
+
+    <!-- start here -->
+
+
+</section>
+
+<div class="flex justify-center items-center my-14 hidden" id="seeMore">
+    <button class="btn btn-error text-white">See more</button>
+</div>
+
+
+<!-- Open the modal using ID.showModal() method -->
+<dialog id="D" class="modal modal-bottom sm:modal-middle">
+</dialog>
+
+
+
+
+</main>
+
+
+<footer></footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
